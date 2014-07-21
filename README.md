@@ -7,5 +7,6 @@ Running the test with 50 updates per second, we get 10k messages in about 2000ms
 
 How to run:
 
-start src/com/sungard/marketmap/common/vertx/data/MarketLinkDataTest.java in cluster mode first,
-start src/com/sungard/marketmap/common/vertx/verticles/MarketMapClientBusOnly.java in cluster mode after.
+start src/com/sungard/marketmap/common/vertx/data/MarketLinkDataTest.java in cluster mode first using the following command: "call vertx run src/com/sungard/marketmap/common/vertx/verticles/MarketMapClientBusOnly.java -cp ./bin -cluster"
+
+start src/com/sungard/marketmap/common/vertx/verticles/MarketMapClientBusOnly.java in cluster mode after using the following command: "call vertx run src/com/sungard/marketmap/common/vertx/data/MarketLinkDataTest.java -cp ./bin -cluster"
